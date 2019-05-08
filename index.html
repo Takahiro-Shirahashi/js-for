@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>JavaScript Samples</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+<!-- DOM操作用のid -->
+  <div id="result"></div>
+<!-- コーディング中に気づいた事などをmain-content内にまとめる -->
+  <div class="main-content">
+    <h2>〜今回行った処理の内容を自分に向けて説明する〜</h2>
+    <p>指定した回数の文だけ特定の処理を繰り返すfor文を使用。<br>
+      実際にコーディングした内容は…<br>
+      for(var i = 1 ; i <= 10 ; i = i + 1){<span class="blue">繰り返す処理の内容</span>}となっている。<br>
+      ⬆︎一見、if文と似ている様にも見えるが、（）の内側ではセミコロン（；の事）で各処理を区切りながら…</p>
+    <p class="red">・”var i = 1”の部分で、繰り返し処理を行う前の初期値を設定。<br>
+    (⬆︎今回の場合だと、初期値に数値の1を設定している)</p>
+    <p>⬇︎</p>
+    <p class="red">・”i <= 10”の部分で、}内の処理を行うかどうかを判断する条件を設定。<br>
+    (⬆︎今回の場合だと、10回目まで{}内の処理を行う様に設定している)</p>
+    <p>⬇︎</p>
+    <p class="red">・”i = i + 1”の部分で、{}内の処理を行った後にどうするかを設定。<br>
+    (⬆︎今回の場合だと、{}内の処理を行った後、変数iに数値の1が足される様に設定している)</p>
+    <p>上記の様な形になっている。</p>
+  </div>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script src="main.js"></script>
+</body>
+</html>
